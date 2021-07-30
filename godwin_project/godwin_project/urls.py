@@ -1,4 +1,4 @@
-"""tango_with_django_project URL Configuration
+"""godwin_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -19,7 +19,7 @@ from django.urls import include
 from godwinapp import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
+    path('', views.godwin, name='godwin'),
     path('godwinapp/', include('godwinapp.urls')),
     path('admin/', admin.site.urls),
 ]
