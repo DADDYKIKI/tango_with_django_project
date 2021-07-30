@@ -5,5 +5,6 @@ from godwinapp import views
 app_name = 'godwinapp'
 
 urlpatterns = [
-	path('', views.index, name='index'),
+	path('', views.godwin, name='godwin'),
+	path('history/', views.history, name='history'),
 ]
