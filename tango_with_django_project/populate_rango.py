@@ -52,7 +52,7 @@ python_pages = [
         return p
 
     def add_cat(name):
-        c = Category.objects.get_or_create(name=name)[0]
+        c = Category.objects.get_or_create(name=name,,views=views,likes=likes)[0]
         c.save()
         return c
 
