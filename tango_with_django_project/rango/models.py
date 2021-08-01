@@ -20,8 +20,6 @@ class Category(models.Model):
         
     
 
-
-
 class Page(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     title = models.CharField(max_length=128)
